@@ -15,6 +15,7 @@ int main(void){
 		displayBar("test.wav");
 
 		//send fast dBs to web (php program on www.cc.puv.fi)
-		break;	//for testing just run loop once
+		//break;	//for testing just run loop once
+		sleep(1);
 	}
 }

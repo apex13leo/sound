@@ -33,11 +33,12 @@ void displayBar(char filename[]){
 		}
 		rms_80[i] =sqrt(sum_200/200);
 		dB = 20*log10(rms_80[i]);
+//conditional compiling
 #ifdef DEBUG
 		printf("RMS[%d] = %10.4f = %10.4fdB\n", i, rms_80[i], dB);
 		//in order to display sound value in a screen, we need to use decible
 #else
-		bar(dB, i);
+		bar(i, dB);
 #endif
 	}	//end of for loop
 }	//end of function
