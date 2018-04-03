@@ -25,8 +25,8 @@ void bar(int col, double dB){
 #ifndef UNICODE		//if not defined
 		printf("%c", '*');
 #else
-		if(i<36/RES)setColor(GREEN);
-		else if(i<52/RES)setColor(YELLOW);
+		if(i<30/RES)setColor(GREEN);
+		else if(i<60/RES)setColor(YELLOW);
 		else setColor(RED);
 		printf("%s", BAR);
 #endif
