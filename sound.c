@@ -1,3 +1,4 @@
+#include "comm.h"
 #include "sound.h"
 #include <stdio.h>
 #include <math.h>
@@ -42,6 +43,9 @@ void displayBar(char filename[]){
 		bar(i, dB);
 #endif
 	}	//end of for loop
+#ifdef COMM		//conditional compilation
+	sendToServer(rms_80);
+#endif
 }	//end of function
 
 //function definition of displayWAVEheader()

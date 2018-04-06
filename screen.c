@@ -31,4 +31,7 @@ void bar(int col, double dB){
 		printf("%s", BAR);
 #endif
 	}
+	gotoxy(37, 1);
 }
+
+
