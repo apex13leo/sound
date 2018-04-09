@@ -31,6 +31,7 @@ void bar(int col, double dB){
 		printf("%s", BAR);
 #endif
 	}
+	setColor(GREEN);
 	gotoxy(37, 1);
 }
 
