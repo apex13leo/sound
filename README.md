@@ -130,7 +130,7 @@ Short file description:
 
 ## 5. Licence
 
-Copyright (C) <2018>  <Leonard Hujic>
+Copyright (C) 2018  Leonard Hujic
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
