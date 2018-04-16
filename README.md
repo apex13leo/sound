@@ -18,8 +18,8 @@ and every second will produce 80 pieces of RMS value as a bar-diagram...
 ## 1. Configuration
 
 	Setting sound card:
-	RPi onboard sound card doesn't have microphone interdace. Default audio device has to be changed to USB sound 
-	card in order to get application working by following next stepps.
+	RPi onboard sound card doesn't have microphone interdace. Default audio device has to be changed to
+	USB sound card in order to get application working by following next stepps.
 
 1.1 Boot up RPi, and apply the USB sound card
 1.2 Use "lsusb" command to check if USB sound card is mounted (device should be visible in list of devices)
