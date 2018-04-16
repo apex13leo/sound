@@ -1,4 +1,4 @@
-# -----------------------------------------  SOUND SENSOR PROJECT  ------------------------------------------------
+# --------------  SOUND SENSOR PROJECT  --------------
 
 This project is meant to collect sound level at a proximity of a Raspberry Pi device. The RPi is equiped with a USB
 sound card (C-Media Electronics, Inc. Audio Adapter) and a microphone. The sound is recorded at 16000Hz Sample rate 
@@ -46,9 +46,10 @@ Table of Content
 
 Known Bugs and fix:
 
-	The latest version of Raspbian comes with new version of alsa-utils (1.0.28), which have a bug while recording.
-	Recording doesn't stop and thus it generatas lots of unusable audio files. Currently know solution is to 
-	downgrade alsa-utils to an earlier version (1.0.25) by following next stepps:
+	The latest version of Raspbian comes with new version of alsa-utils (1.0.28), which have a bug
+	while recording. Recording doesn't stop and thus it generatas lots of unusable audio files. 
+	Currently know solution is to downgrade alsa-utils to an earlier version (1.0.25)
+	by following next stepps:
 
 1.6.1 Use "sudo nano/etc/apt/sources.list" command and add the last line:
 
@@ -129,7 +130,7 @@ Short file description:
 
 5. Licence
 
-Copyright (C) <year>  <name of author>
+Copyright (C) <2018>  <Leonard Hujic>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -141,12 +142,15 @@ Copyright (C) <year>  <name of author>
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
+This program was guided by teacher Gao Chao.
+
 ------------------------------------------------------------------------------------------------------------------
 
 6. Contact information
 
-Leonard Hujic
-e1700678@edu.vamk.fi
+	Leonard Hujic
+
+	e1700678@edu.vamk.fi
 
 ------------------------------------------------------------------------------------------------------------------
 
