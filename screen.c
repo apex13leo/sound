@@ -44,6 +44,9 @@ void gotoxy(int row, int col){
 
 /*
 	Function definition of bar()
+	Displays 80 lines of sound data in dB.
+	Sound level is defined by colors. From green (least noise) to red (most noise).
+	Includes screen postioning.
 */
 
 void bar(int col, double dB){
