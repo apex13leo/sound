@@ -5,17 +5,17 @@ sound card (C-Media Electronics, Inc. Audio Adapter) and a microphone. The sound
 and every second will produce 80 pieces of RMS value as a bar-diagram...
 
 
-Table of Content
-1. Configuration
-2. Installation
-3. Operation
-4. Manifest (list of files and short description of their roles)
-5. Licence
-6. Contact information
+#Table of Content
+###1. Configuration
+###2. Installation
+###3. Operation
+###4. Manifest (list of files and short description of their roles)
+###5. Licence
+###6. Contact information
 
 ------------------------------------------------------------------------------------------------------------------
 
-1. Configuration
+#1. Configuration
 
 	Setting sound card:
 	RPi onboard sound card doesn't have microphone interdace. Default audio device has to be changed to USB sound 
@@ -44,7 +44,7 @@ Table of Content
 	Navigate trough options to set sound and microphone to desired levels with directional keys on keyboard.
 
 
-Known Bugs and fix:
+##Known Bugs and fix:
 
 	The latest version of Raspbian comes with new version of alsa-utils (1.0.28), which have a bug
 	while recording. Recording doesn't stop and thus it generatas lots of unusable audio files. 
@@ -72,7 +72,7 @@ Known Bugs and fix:
 
 ------------------------------------------------------------------------------------------------------------------
 
-2. Installation
+#2. Installation
 
 Install libcurl by following next stepps:
 
@@ -97,7 +97,7 @@ Install application:
 
 ------------------------------------------------------------------------------------------------------------------
 
-3. Operation
+#3. Operation
 
 Running application:
 
@@ -106,7 +106,7 @@ Running application:
 
 ------------------------------------------------------------------------------------------------------------------
 
-4. Manifest (list of files and short description of their roles)
+#4. Manifest (list of files and short description of their roles)
 
 File list:
 
@@ -128,7 +128,7 @@ Short file description:
 
 ------------------------------------------------------------------------------------------------------------------
 
-5. Licence
+#5. Licence
 
 Copyright (C) <2018>  <Leonard Hujic>
 
@@ -146,7 +146,7 @@ This program was guided by teacher Gao Chao.
 
 ------------------------------------------------------------------------------------------------------------------
 
-6. Contact information
+#6. Contact information
 
 	Leonard Hujic
 
