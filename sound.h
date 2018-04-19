@@ -1,4 +1,4 @@
-//#define DEBUG
+//#define DEBUG		//conditional compiling
 //content definitions
 #define SAMPLERATE 16000
 // header file for processing sound (WAV) file.
@@ -8,9 +8,9 @@ typedef struct{
 	unsigned int chunkSize;	//4 bytes
 	char format[4];		//"WAVE"
 	char subchunk1ID[4];	//"fmt "
-	unsigned int subchunk1Size;		//
-	unsigned short audioFormat;
-	unsigned short numChannels;
+	unsigned int subchunk1Size;
+	unsigned short audioFormat;		//16 for PCM
+	unsigned short numChannels;		//1 for mono
 	unsigned int sampleRate;
 	unsigned int byteRate;
 	unsigned short blockAlign;

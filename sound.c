@@ -33,8 +33,9 @@ void displayBar(char filename[]){
 		for(j=0,sum_200=0.0; j<200; j++){
 			sum_200 += samples[j+i*200]*samples[j+i*200];
 		}
-		rms_80[i] =sqrt(sum_200/200);
-		dB = 20*log10(rms_80[i]);
+	rms_80[i] =sqrt(sum_200/200);
+	dB = 20*log10(rms_80[i]);
+
 //conditional compiling
 #ifdef DEBUG
 		printf("RMS[%d] = %10.4f = %10.4fdB\n", i, rms_80[i], dB);
@@ -48,7 +49,10 @@ void displayBar(char filename[]){
 #endif
 }	//end of function
 
-//function definition of displayWAVEheader()
+/*
+	Function definition of displayWAVEheader()
+	Displays all datafile information
+*/
 void displayWAVheader(char filename[]){
 	WAVheader myhdr;		//an instace of defined struct
 	FILE *fp;
@@ -91,6 +95,10 @@ void displayWAVheader(char filename[]){
 #endif
 }
 
+/*
+	Function definition of printID() function.
+	Prints array of characters in one lina nad moves to next line
+*/
 void printID(char id[]){
 	int i;
 	for(i=0; i<4; i++)

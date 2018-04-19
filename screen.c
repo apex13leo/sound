@@ -5,7 +5,7 @@
 /*
 	Function definition of setColor()
 	This function will use VT100 escape sequence "\ESC[1;m" to define colors of elements
-	input argument: none
+	input argument: int
 	return argument: none
 */
 
@@ -44,7 +44,7 @@ void gotoxy(int row, int col){
 
 /*
 	Function definition of bar()
-	Displays 80 lines of sound data in dB.
+	Displays up to 80 lines of sound data in dB.
 	Sound level is defined by colors. From green (least noise) to red (most noise).
 	Includes screen postioning.
 */
@@ -53,7 +53,7 @@ void bar(int col, double dB){
 	int i;
 	for(i=0; i<dB/RES; i++){
 		gotoxy(35-i, col+1);	//the first bar start from col=1
-#ifndef UNICODE		//if not defined
+#ifndef UNICODE		//if not defined, use asterisk symbol for output
 		printf("%c", '*');
 #else
 		if(i<30/RES)setColor(GREEN);
@@ -61,9 +61,9 @@ void bar(int col, double dB){
 		else setColor(RED);
 		printf("%s", BAR);
 #endif
-	}
+	}		//end of for
 	setColor(GREEN);
 	gotoxy(37, 1);
-}
+}		//end of function
 
 

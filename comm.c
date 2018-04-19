@@ -4,9 +4,9 @@
 #include <math.h>
 
 /*
-This function takes in RMS value of 1 second, each is calculated by 16000/80=200 samples
-but the function will re-calculate 8 pieces of RMS values each corresponding to 2000 samples
-or 125ms of sound
+ This function takes in RMS value of 1 second, each is calculated by 16000/80=200
+ samples but the function will re-calculate 8 pieces of RMS values each
+ corresponding to 2000 samples or 125ms of sound
 */
 
 void sendToServer(double r80[]){
